@@ -1,0 +1,32 @@
+{
+    "id": { "type": "string" }
+    "title": {
+        "type": "string",
+        "properties": {
+            "mr" {
+                "type": "string"
+                }
+            "ms" {
+                "type": "string"
+                }
+            "mrs" {
+                 "type": "string"
+                }
+            "miss" {
+                 "type": "string"
+                }
+            "dr" {
+                 "type": "string"
+                }
+            }
+        }
+    "firstName": {
+        "type": "string"
+    }
+    "lastName": {
+        "type": "string"
+    }
+    "picture": {
+        "type": "string"
+    }
+}
