@@ -1,9 +1,0 @@
-[
-  {
-    "id": "regex:[\\d]",
-    "title": "mr",
-    "firstName": "type:String",
-    "lastName": "type:String",
-    "picture": string(url)
-  }
-]

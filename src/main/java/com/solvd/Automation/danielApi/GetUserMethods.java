@@ -9,14 +9,12 @@ import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.qaprosoft.carina.core.foundation.utils.Configuration;
 import io.restassured.http.Header;
 
-@Endpoint(url = "${base_url}/user", methodType = HttpMethodType.GET)
-@ResponseTemplatePath(path = "automationTest/danielApi/dummyApi/_get/rs.json")
+@Endpoint(url = "${base_url}/users/2", methodType = HttpMethodType.GET)
+@ResponseTemplatePath(path = "automationTest/danielApi/reqresApi/_get/rs.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
-public class GetJson  extends AbstractApiMethodV2 {
+public class GetUserMethods extends AbstractApiMethodV2 {
 
-    public GetJson() {
-        super(null, "automationTest/danielApi/dummyApi/_get/rs.json", "automationTest/danielApi/user.properties");
+    public GetUserMethods() {
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
-        request.header(new Header("x-api-key", super.getProperties().getProperty("api_key")));
     }
 }
