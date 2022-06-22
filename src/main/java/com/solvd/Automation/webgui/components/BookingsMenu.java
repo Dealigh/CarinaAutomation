@@ -2,6 +2,7 @@ package com.solvd.Automation.webgui.components;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
+import com.solvd.Automation.webgui.pages.BookingsPage;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -30,5 +31,8 @@ public class BookingsMenu extends AbstractUIObject{
         super(driver, searchContext);
     }
 
-
+    public BookingsPage clickUnpaidBookingButton() {
+        unpaidButton.click();
+        return new BookingsPage(getDriver());
+    }
 }
