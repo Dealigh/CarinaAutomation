@@ -1,13 +1,11 @@
 package com.solvd.automation;
 
-
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.PageOpeningStrategy;
 import com.solvd.automation.webgui.pages.DashboardPage;
 import com.solvd.automation.webgui.pages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 
 public class LoginTests extends BasicTravelTest {
 
