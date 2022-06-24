@@ -13,7 +13,7 @@ public class BookingsTests extends BasicTravelTest {
     @Test(description = "Unpaid booking condition, 5")
     @MethodOwner(owner = "Rodriguez_Daniel")
     public void testUnpaidBookingsMenu() {
-        authUtil.login();
+        login(getDriver());
         DashboardPage dashboardPage = new DashboardPage(getDriver());
         BookingsMenu bookingsMenu = dashboardPage
                 .getNavigationBar()
@@ -23,6 +23,7 @@ public class BookingsTests extends BasicTravelTest {
         Table table = bookingsPage.getBookingsTable();
 
         String bookingStatus = table.getChosenPaidStatus(Integer.toString(1)).toUpperCase();
+        LOGGER.info(bookingStatus);
         Assert.assertEquals(bookingStatus, "UNPAID");
     }
 }
