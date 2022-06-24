@@ -13,7 +13,7 @@ public class BookingsTests extends BasicTravelTest {
     @Test(description = "Unpaid booking condition, 5")
     @MethodOwner(owner = "Rodriguez_Daniel")
     public void testUnpaidBookingsMenu() {
-        authUtil.login();
+        login(getDriver());
         DashboardPage dashboardPage = new DashboardPage(getDriver());
         BookingsMenu bookingsMenu = dashboardPage
                 .getNavigationBar()
