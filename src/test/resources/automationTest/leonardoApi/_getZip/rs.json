@@ -1,8 +1,5 @@
 {
-  "coord": {
-    "lon": "type:Double",
-    "lat": "type:Double"
-  },
+  "coord": {"lon": "type:Double","lat": "type:Double"},
   "weather": [
     {
       "id": "type:Integer",
@@ -11,22 +8,19 @@
       "icon": "type:String"
     }
   ],
-  "base": "stations",
+  "base": "type:String",
   "main": {
     "temp": "type:Double",
     "feels_like": "type:Double",
     "temp_min": "type:Double",
     "temp_max": "type:Double",
     "pressure": "type:Integer",
-    "humidity": "type:Integer",
-    "sea_level": "type:Integer",
-    "grnd_level": "type:Integer"
+    "humidity": "type:Integer"
   },
   "visibility": "type:Integer",
   "wind": {
     "speed": "type:Double",
-    "deg": "type:Integer",
-    "gust": "type:Double"
+    "deg": "type:Integer"
   },
   "clouds": {
     "all": "type:Integer"
@@ -35,12 +29,13 @@
   "sys": {
     "type": "type:Integer",
     "id": "type:Integer",
-    "country": "RU",
+    "message": "type:Double",
+    "country": "type:String",
     "sunrise": "type:Integer",
     "sunset": "type:Integer"
   },
   "timezone": "type:Integer",
   "id": "type:Integer",
-  "name": "Moscou",
+  "name": "type:String",
   "cod": "type:Integer"
 }
