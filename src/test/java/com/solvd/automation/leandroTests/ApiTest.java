@@ -3,7 +3,7 @@ package com.solvd.automation.leandroTests;
 import com.qaprosoft.apitools.validation.JsonCompareKeywords;
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
-import com.solvd.automation.leandroApi.GetWeatherMethod;
+import com.solvd.automation.leandroApi.GetWeatherByLatLon;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,7 @@ public class ApiTest implements IAbstractTest {
     @MethodOwner(owner = "LeoM")
     public void testGetWeather() {
         LOGGER.info("Get weather test");
-        GetWeatherMethod getWM = new GetWeatherMethod();
+        GetWeatherByLatLon getWM = new GetWeatherByLatLon();
         getWM.callAPIExpectSuccess();
         getWM.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
         getWM.validateResponseAgainstSchema("automationTest/leandroApi/_get/rs.schema");

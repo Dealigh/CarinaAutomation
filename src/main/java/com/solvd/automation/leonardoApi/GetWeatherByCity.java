@@ -1,4 +1,4 @@
-package com.solvd.automation.leandroApi;
+package com.solvd.automation.leonardoApi;
 
 import com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2;
 import com.qaprosoft.carina.core.foundation.api.annotation.Endpoint;
@@ -8,12 +8,14 @@ import com.qaprosoft.carina.core.foundation.api.http.HttpMethodType;
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.qaprosoft.carina.core.foundation.utils.Configuration;
 
-@Endpoint(url= "${base_url}/data/2.5/weather?q=London&appid=5593ead48ecbc622b6a14a5c55fbe3c7", methodType = HttpMethodType.GET)
-@ResponseTemplatePath(path = "automationTest/leandroApi/_get/rs.json")
-@SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
-public class GetWeatherMethod extends AbstractApiMethodV2 {
+public class GetWeatherByCity {
 
-    public GetWeatherMethod () {replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));}
+    @Endpoint(url= "${base_url}", methodType = HttpMethodType.GET)
+    @ResponseTemplatePath(path = "automationTest/leonardoApi/_getCity/rs.json")
+    @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
+    public class GetWeather extends AbstractApiMethodV2 {
+
+        public GetWeather () {replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url2"));}
+    }
+
 }
-
-
