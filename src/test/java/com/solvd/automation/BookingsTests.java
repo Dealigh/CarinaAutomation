@@ -23,6 +23,7 @@ public class BookingsTests extends BasicTravelTest {
         Table table = bookingsPage.getBookingsTable();
 
         String bookingStatus = table.getChosenPaidStatus(Integer.toString(1)).toUpperCase();
+        LOGGER.info(bookingStatus);
         Assert.assertEquals(bookingStatus, "UNPAID");
     }
 }

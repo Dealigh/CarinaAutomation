@@ -13,8 +13,6 @@ import java.lang.invoke.MethodHandles;
 
 public class ApiTestByZipCode implements IAbstractTest {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-
     @Test()
     @MethodOwner(owner = "Leito")
     public void testGetWeatherByZip() {

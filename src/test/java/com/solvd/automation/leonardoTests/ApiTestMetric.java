@@ -14,9 +14,6 @@ import java.lang.invoke.MethodHandles;
 
 public class ApiTestMetric implements IAbstractTest {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-
-
     @Test()
     @MethodOwner(owner = "Leito")
     public void testGetWeatherUsingMetric() {
