@@ -15,6 +15,6 @@ import com.qaprosoft.carina.core.foundation.utils.Configuration;
 
 public class GetWeatherByCity extends AbstractApiMethodV2{
 
-        public GetWeatherByCit () {replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url2"));}
+        public GetWeatherByCity () {replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url2"));}
     }
 
