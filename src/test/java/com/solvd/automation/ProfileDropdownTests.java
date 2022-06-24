@@ -11,7 +11,7 @@ public class ProfileDropdownTests extends BasicTravelTest {
     @Test(description = "User logout from profile dropdown, 4")
     @MethodOwner(owner = "Rodriguez_Daniel")
     public void logOutSession() {
-        authUtil.login();
+        login(getDriver());
         DashboardPage dashboardPage = new DashboardPage(getDriver());
         dashboardPage
                 .getNavigationBar()

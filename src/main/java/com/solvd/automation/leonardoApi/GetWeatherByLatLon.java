@@ -8,13 +8,12 @@ import com.qaprosoft.carina.core.foundation.api.http.HttpMethodType;
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.qaprosoft.carina.core.foundation.utils.Configuration;
 
-
-@Endpoint(url= "${base_url}", methodType = HttpMethodType.GET)
-@ResponseTemplatePath(path = "automationTest/leonardoApi/_getCity/rs.json")
+@Endpoint(url = "${base_url}/data/2.5/weather?id=${config.env.cityId}&appid=${config.env.key}" , methodType = HttpMethodType.GET)
+@ResponseTemplatePath(path = "automationTest/leandroApi/_get/byCityId/rs.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
 
-public class GetWeatherByCity extends AbstractApiMethodV2{
+public class GetWeatherByLatLon extends AbstractApiMethodV2 {
 
-        public GetWeatherByCity () {replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url2"));}
-    }
+    public GetWeatherByLatLon() {replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));}
 
+}
