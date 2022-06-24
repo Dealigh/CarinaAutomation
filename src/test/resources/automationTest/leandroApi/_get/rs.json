@@ -7,7 +7,7 @@
     {
       "id": "type:Integer",
       "main": "Clouds",
-      "description": "broken clouds",
+      "description": "type:String",
       "icon": "04d"
     }
   ],

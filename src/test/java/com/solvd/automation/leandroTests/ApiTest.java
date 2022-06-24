@@ -17,11 +17,11 @@ public class ApiTest implements IAbstractTest {
 
     @Test()
     @MethodOwner(owner = "LeoM")
-    public void getWeather() {
+    public void testGetWeather() {
         LOGGER.info("Get weather test");
         GetWeatherMethod getWM = new GetWeatherMethod();
         getWM.callAPIExpectSuccess();
         getWM.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
-        //getWM.validateResponseAgainstSchema("asd");
+        getWM.validateResponseAgainstSchema("automationTest/leandroApi/_get/rs.schema");
     }
 }
