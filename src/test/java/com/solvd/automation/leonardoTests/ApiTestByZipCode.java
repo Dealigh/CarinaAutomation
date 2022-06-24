@@ -11,14 +11,15 @@ import org.testng.annotations.Test;
 
 import java.lang.invoke.MethodHandles;
 
-public class ApiTestWeather implements IAbstractTest {
+public class ApiTestByZipCode implements IAbstractTest {
 
     @Test()
     @MethodOwner(owner = "Leito")
-    public void testGetWeatherByLatLon() {
+    public void testGetWeatherByZip() {
         GetWeather getUsersMethods = new GetWeather();
         getUsersMethods.callAPIExpectSuccess();
         getUsersMethods.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
-        getUsersMethods.validateResponseAgainstSchema("automationTest/leonardoApi/_getLatLon/rs.schema");
+        getUsersMethods.validateResponseAgainstSchema("automationTest/leonardoApi/_getZip/rs.schema");
     }
 }
+
