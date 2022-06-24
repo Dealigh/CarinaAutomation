@@ -13,6 +13,9 @@ import java.lang.invoke.MethodHandles;
 
 public class ApiTestWeather implements IAbstractTest {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
+
+
     @Test()
     @MethodOwner(owner = "Leito")
     public void testGetWeatherByLatLon() {
