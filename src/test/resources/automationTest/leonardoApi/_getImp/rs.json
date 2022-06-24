@@ -1,7 +1,7 @@
 {
   "coord": {
     "lon": "type:Double",
-    "lat": "type:Double"
+    "lat": "type:Integer"
   },
   "weather": [
     {
@@ -11,7 +11,7 @@
       "icon": "type:String"
     }
   ],
-  "base": "stations",
+  "base": "type:String",
   "main": {
     "temp": "type:Double",
     "feels_like": "type:Double",
@@ -35,12 +35,12 @@
   "sys": {
     "type": "type:Integer",
     "id": "type:Integer",
-    "country": "RU",
+    "country": "type:String",
     "sunrise": "type:Integer",
     "sunset": "type:Integer"
   },
   "timezone": "type:Integer",
   "id": "type:Integer",
-  "name": "Moscou",
+  "name": "type:String",
   "cod": "type:Integer"
 }
