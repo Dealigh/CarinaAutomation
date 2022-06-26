@@ -6,11 +6,7 @@ import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 
 import com.solvd.automation.leonardoApi.GetWeatherUsingMetric;
 import org.skyscreamer.jsonassert.JSONCompareMode;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
-
-import java.lang.invoke.MethodHandles;
 
 public class ApiTestMetric implements IAbstractTest {
 

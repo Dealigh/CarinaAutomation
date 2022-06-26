@@ -12,7 +12,7 @@ public class SettingsTests extends BasicTravelTest {
     @Test(description = "Change name in Settings, 3")
     @MethodOwner(owner = "Rodriguez_Daniel")
     public void testChangeName() {
-        login(getDriver());
+        login.loginService(getDriver());
         DashboardPage dashboardPage = new DashboardPage(getDriver());
         SettingsPage settingsPage = dashboardPage.getLeftMenuBar().openSettingsSubmenu();
 

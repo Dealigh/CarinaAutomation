@@ -25,7 +25,7 @@ public class LoginTests extends BasicTravelTest {
     @Test(description = "Login Test, 2")
     @MethodOwner(owner = "Rodriguez_Daniel")
     public void testLoginAdminAcc() {
-        login(getDriver());
+        login.loginService(getDriver());
         DashboardPage dashboardPage = new DashboardPage(getDriver());
         Assert.assertTrue(dashboardPage.isPageOpened());
     }

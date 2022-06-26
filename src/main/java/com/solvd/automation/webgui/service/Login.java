@@ -1,13 +1,13 @@
-package com.solvd.automation.service;
+package com.solvd.automation.webgui.service;
 
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.PageOpeningStrategy;
 import com.solvd.automation.webgui.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 
-public interface ILogin {
+public class Login {
 
-    default void login(WebDriver driver) {
+    public void loginService(WebDriver driver) {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         loginPage.setPageOpeningStrategy(PageOpeningStrategy.BY_URL);
