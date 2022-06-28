@@ -21,6 +21,15 @@ public class DashboardPage extends BasicTravelsPage {
     @FindBy(xpath = "//h1[text()=\"Dashboard\"]")
     private ExtendedWebElement dashboardTitle;
 
+    @FindBy (xpath ="//a[@aria-controls='hotelsmodule']")
+    private ExtendedWebElement hotels;
+
+    @FindBy (xpath ="//a[@data-bs-target=\"#Hotels\"]")
+    private ExtendedWebElement anotherHotels;
+
+    @FindBy (xpath ="//*[@id=\"Hotels\"]/nav/a[1]")
+    private ExtendedWebElement theLastHotels;
+
     public DashboardPage(WebDriver driver) {
         super(driver);
         setUiLoadedMarker(dashboardTitle);
@@ -37,4 +46,17 @@ public class DashboardPage extends BasicTravelsPage {
     public String getMainTitle() {
         return dashboardTitle.getText();
     }
+
+    public void clickHotel(){
+        hotels.click();
+    }
+
+    public void secondHotel(){
+        anotherHotels.click();
+    }
+
+    public void lastHotels(){
+        theLastHotels.click();
+    }
+
 }
