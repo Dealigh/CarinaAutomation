@@ -8,10 +8,21 @@ public class Hotels extends BasicTravelsPage{
 
 
     @FindBy(xpath = "//button[@type='submit']")
-    private ExtendedWebElement add;
+    private ExtendedWebElement openAdd;
+
+    @FindBy(xpath = "//*[@id=\"layoutDrawer_content\"]/main/div/header/div/div/div[1]/p/small")
+    private ExtendedWebElement tittle;
 
     public Hotels(WebDriver driver) {
         super(driver);
         setPageURL("/hotels");
+    }
+
+    public void oppeningAdd(){
+        openAdd.click();
+    }
+
+    public String getTittle(){
+       return tittle.getText();
     }
 }
