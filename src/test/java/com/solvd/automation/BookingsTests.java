@@ -9,8 +9,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class BookingsTests extends BasicTravelTest {
-
-    @Test(description = "Unpaid booking condition, 5")
     @MethodOwner(owner = "Rodriguez_Daniel")
     public void testUnpaidBookingsMenu() {
         login(getDriver());
