@@ -32,7 +32,7 @@
   "sys": {
     "type": "type:Integer",
     "id": "type:Integer",
-    "country":"type:String",
+    "country": "type:String",
     "sunrise": "type:Integer",
     "sunset": "type:Integer"
   },

@@ -20,4 +20,8 @@ public class ProfileDropdownTests extends BasicTravelTest {
         LoginPage loginPage = new LoginPage(getDriver());
         Assert.assertTrue(loginPage.isPageOpened());
     }
+
+
 }
+
+
