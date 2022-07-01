@@ -1,4 +1,4 @@
-package com.solvd.automation.service;
+package com.solvd.automation.webgui.service;
 
 import com.solvd.automation.webgui.pages.DashboardPage;
 import org.openqa.selenium.WebDriver;
