@@ -6,14 +6,12 @@ import com.solvd.automation.webgui.components.Table;
 import com.solvd.automation.webgui.pages.BookingsPage;
 import com.solvd.automation.webgui.pages.DashboardPage;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class BookingsTests extends BasicTravelTest {
 
-    @Test(description = "Unpaid booking condition, 5")
     @MethodOwner(owner = "Rodriguez_Daniel")
     public void testUnpaidBookingsMenu() {
-        login.loginService();
+        login.loginService(getDriver());
         DashboardPage dashboardPage = new DashboardPage(getDriver());
         BookingsMenu bookingsMenu = dashboardPage
                 .getNavigationBar()

@@ -3,13 +3,12 @@ package com.solvd.automation.webgui.service;
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.PageOpeningStrategy;
 import com.solvd.automation.webgui.pages.LoginPage;
-
-import static com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.getDriver;
+import org.openqa.selenium.WebDriver;
 
 public class Login {
 
-    public void loginService() {
-        LoginPage loginPage = new LoginPage(getDriver());
+    public void loginService(WebDriver driver) {
+        LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         loginPage.setPageOpeningStrategy(PageOpeningStrategy.BY_URL);
         loginPage.typeEmail(R.TESTDATA.get("test_account"));

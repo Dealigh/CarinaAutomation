@@ -14,7 +14,7 @@
   "base": "type:String",
   "main": {
     "temp": "type:Double",
-    "feels_like": "type:Double",
+    "feels_like": "type:Integer",
     "temp_min": "type:Double",
     "temp_max": "type:Double",
     "pressure": "type:Integer",
