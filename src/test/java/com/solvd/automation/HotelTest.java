@@ -14,7 +14,7 @@ public class HotelTest extends BasicTravelTest {
     @Test(description = "Entering Hotels Page after Log In")
     @MethodOwner(owner = "Gabriel")
     public void hotelTest() {
-        login(getDriver());
+        login.loginService(getDriver());
         hotels(getDriver());
         Hotels hotels = new Hotels(getDriver());
         Assert.assertEquals(hotels.getTittle(), "Hotels Management");
@@ -23,7 +23,7 @@ public class HotelTest extends BasicTravelTest {
     @Test(description = "Entering Add Web Page")
     @MethodOwner(owner = "Gabriel")
     public void addTestPage() {
-        login(getDriver());
+        login.loginService(getDriver());
         hotels(getDriver());
         Hotels hotels = new Hotels(getDriver());
         HotelsAdd newAdd = new HotelsAdd(getDriver());
@@ -34,7 +34,7 @@ public class HotelTest extends BasicTravelTest {
     @Test(description = "Trying to Add a New Hotel")
     @MethodOwner(owner = "Gabriel")
     public void addHotelTrouble() {
-        login(getDriver());
+        login.loginService(getDriver());
         hotels(getDriver());
         Hotels hotels = new Hotels(getDriver());
         hotels.openingAddPage();
@@ -50,7 +50,7 @@ public class HotelTest extends BasicTravelTest {
     @Test(description = "sorting out in descending stars ranking and editing one")
     @MethodOwner(owner = "Gabriel")
     public void selectAndEdit() {
-        login(getDriver());
+        login.loginService(getDriver());
         hotels(getDriver());
         Hotels hotels = new Hotels(getDriver());
         hotels.justOrderTwice();
@@ -63,7 +63,7 @@ public class HotelTest extends BasicTravelTest {
     @Test(description = "Checking 3 hotels and returning to hotels page")
     @MethodOwner(owner = "Gabriel")
     public void movingBackAndFoward() {
-        login(getDriver());
+        login.loginService(getDriver());
         hotels(getDriver());
         Hotels hotels = new Hotels(getDriver());
         hotels.justOrderTwice();

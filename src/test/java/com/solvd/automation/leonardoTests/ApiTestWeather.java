@@ -8,11 +8,7 @@ import com.solvd.automation.leonardoApi.GetWeatherByCity;
 import com.solvd.automation.leonardoApi.GetWeatherUsingImperial;
 import com.solvd.automation.leonardoApi.GetWeatherUsingMetric;
 import org.skyscreamer.jsonassert.JSONCompareMode;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
-
-import java.lang.invoke.MethodHandles;
 
 public class ApiTestWeather implements IAbstractTest {
 

@@ -21,22 +21,22 @@ public class DashboardPage extends BasicTravelsPage {
     @FindBy(xpath = "//h1[text()=\"Dashboard\"]")
     private ExtendedWebElement dashboardTitle;
 
-    @FindBy (xpath ="//a[@aria-controls='hotelsmodule']")
+    @FindBy(xpath = "//a[@aria-controls='hotelsmodule']")
     private ExtendedWebElement hotels;
 
-    @FindBy (xpath ="//a[@data-bs-target=\"#Hotels\"]")
+    @FindBy(xpath = "//a[@data-bs-target=\"#Hotels\"]")
     private ExtendedWebElement anotherHotels;
 
-    @FindBy (xpath ="//*[@id=\"Hotels\"]/nav/a[1]")
+    @FindBy(xpath = "//*[@id=\"Hotels\"]/nav/a[1]")
     private ExtendedWebElement theLastHotels;
 
     @FindBy(xpath = "//a[@aria-controls='toursmodule']")
     private ExtendedWebElement toursFirstModule;
 
-    @FindBy (xpath = "//a[@data-bs-target=\"#Tours\"]")
+    @FindBy(xpath = "//a[@data-bs-target=\"#Tours\"]")
     private ExtendedWebElement toursSecondModule;
 
-    @FindBy (xpath = "//*[@id=\"Tours\"]/nav/a[1]")
+    @FindBy(xpath = "//*[@id=\"Tours\"]/nav/a[1]")
     private ExtendedWebElement toursThirdModule;
 
     public DashboardPage(WebDriver driver) {
@@ -56,15 +56,15 @@ public class DashboardPage extends BasicTravelsPage {
         return dashboardTitle.getText();
     }
 
-    public void clickHotel(){
+    public void clickHotel() {
         hotels.click();
     }
 
-    public void secondHotel(){
+    public void secondHotel() {
         anotherHotels.click();
     }
 
-    public void lastHotels(){
+    public void lastHotels() {
         theLastHotels.click();
     }
 

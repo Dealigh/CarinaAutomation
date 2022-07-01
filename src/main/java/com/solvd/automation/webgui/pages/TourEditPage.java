@@ -25,7 +25,7 @@ public class TourEditPage extends BasicTravelsPage {
     @FindBy(xpath = "//input[@name=\"ffrom\"]")
     private ExtendedWebElement fromBox;
 
-    @FindBy(xpath = "//input[@name=\"fto\"]" )
+    @FindBy(xpath = "//input[@name=\"fto\"]")
     private ExtendedWebElement toBox;
 
     public TourEditPage(WebDriver driver) {
@@ -41,7 +41,7 @@ public class TourEditPage extends BasicTravelsPage {
         tourNameBox.type(name);
     }
 
-    public void clickSubmitButton () {
+    public void clickSubmitButton() {
         submitButton.click();
     }
 
@@ -49,7 +49,7 @@ public class TourEditPage extends BasicTravelsPage {
         starsButton.click();
     }
 
-    public void clickSelectStartsValue(){
+    public void clickSelectStartsValue() {
         selectStarsValue.click();
     }
 
@@ -73,7 +73,7 @@ public class TourEditPage extends BasicTravelsPage {
         toBox.click();
     }
 
-    public void typeToBox(String date){
+    public void typeToBox(String date) {
         toBox.type(date);
     }
 }

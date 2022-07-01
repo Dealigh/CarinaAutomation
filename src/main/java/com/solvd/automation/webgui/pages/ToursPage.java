@@ -4,7 +4,7 @@ import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebEleme
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class ToursPage extends BasicTravelsPage{
+public class ToursPage extends BasicTravelsPage {
 
     @FindBy(xpath = "//*[@id=\"layoutDrawer_content\"]/main/div/div[1]/div/div[1]/div[3]/a")
     private ExtendedWebElement searchButton;
@@ -33,7 +33,7 @@ public class ToursPage extends BasicTravelsPage{
         searchButton.click();
     }
 
-    public void typeInSearchBox (String search) {
+    public void typeInSearchBox(String search) {
         searchBox.type(search);
     }
 

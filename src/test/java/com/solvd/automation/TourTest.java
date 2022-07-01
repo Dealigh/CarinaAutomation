@@ -6,18 +6,19 @@ import com.solvd.automation.webgui.pages.ToursPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TourTest extends BasicTravelTest{
+public class TourTest extends BasicTravelTest {
 
     private final static String SEARCH = "Hong";
     private final static String EDIT_TITTLE = "Spectaculars Of The Nile 4 Nights";
     private final static String EDIT_DAYS = "4";
     private final static String FROM_DATE = "20/08/2022";
-    private final static String TO_DATE = "30/08/2022";;
+    private final static String TO_DATE = "30/08/2022";
+    ;
 
     @Test(description = "Go to tours page after login.")
     @MethodOwner(owner = "Leandro")
     public void goToToursPage() {
-        login(getDriver());
+        login.loginService(getDriver());
         tours(getDriver());
         ToursPage toursPage = new ToursPage(getDriver());
         Assert.assertTrue(toursPage.isPageOpened());
@@ -67,7 +68,7 @@ public class TourTest extends BasicTravelTest{
 
     @Test(description = "Delete one selected tour.")
     @MethodOwner(owner = "Leandro")
-    public void deleteTourEdit(){
+    public void deleteTourEdit() {
         selectTourTest();
         ToursPage toursPage = new ToursPage(getDriver());
         toursPage.clickDeleteButton();

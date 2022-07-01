@@ -29,6 +29,9 @@ public class LeftMenuBar extends AbstractUIObject {
     @FindBy(xpath = "//div/a[6]")
     private ExtendedWebElement menuAccounts;
 
+    @FindBy(xpath = "//*[@data-bs-target='#Locations']")
+    private ExtendedWebElement menuLocationsButton;
+
     @FindBy(xpath = "//div/a[17]")
     private ExtendedWebElement menuBookings;
 

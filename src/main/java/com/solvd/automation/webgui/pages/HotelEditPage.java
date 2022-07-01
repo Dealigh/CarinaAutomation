@@ -4,13 +4,10 @@ import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebEleme
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class HotelEditPage extends BasicTravelsPage{
-
+public class HotelEditPage extends BasicTravelsPage {
 
     @FindBy(xpath = "//h4[@class='mb-3']")
     private ExtendedWebElement title;
-
-
 
     public HotelEditPage(WebDriver driver) {
         super(driver);
@@ -18,10 +15,7 @@ public class HotelEditPage extends BasicTravelsPage{
 
     }
 
-
-    public String getTitle(){
+    public String getTitle() {
         return title.getText();
     }
-
-
 }
