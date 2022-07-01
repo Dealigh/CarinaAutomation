@@ -1,9 +1,10 @@
 package com.solvd.automation;
 
 import com.qaprosoft.carina.core.foundation.AbstractTest;
+import com.solvd.automation.webgui.service.ITours;
 import com.solvd.automation.webgui.service.Login;
-import com.solvd.automation.service.IHotels;
-import com.solvd.automation.service.ITours;
+import com.solvd.automation.webgui.service.IHotels
+import com.solvd.automation.webgui.service.Login;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
